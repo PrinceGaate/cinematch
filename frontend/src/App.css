@@ -1726,3 +1726,79 @@
 .footer-copyright {
   color: var(--color-outline);
 }
+
+.footer-credits-divider {
+  height: 1px;
+  background-color: rgba(52, 52, 57, 0.4);
+  margin: 24px 0 20px;
+}
+
+.footer-credits-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 11px;
+  color: var(--color-outline);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer-credits-row {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+.footer-credits-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-credits-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-secondary);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.footer-credits-body {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .footer-credits-body {
+    justify-content: flex-end;
+  }
+}
+
+.footer-tmdb-link {
+  display: inline-flex;
+  align-items: center;
+  opacity: 0.85;
+  transition: opacity var(--transition-fast);
+}
+
+.footer-tmdb-link:hover {
+  opacity: 1;
+}
+
+.footer-tmdb-logo {
+  height: 12px;
+  width: auto;
+  display: block;
+}
+
+.footer-tmdb-disclaimer {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--color-outline);
+}

@@ -433,6 +433,35 @@ export default function App() {
               © 2025 CineMatch. All rights reserved.
             </p>
           </div>
+
+          {/* Credits & Data Sources */}
+          <div className="footer-credits-divider" />
+          <div className="footer-credits-row">
+            <div className="footer-credits-header">
+              <span className="footer-credits-title">Credits &amp; Data Sources</span>
+            </div>
+            <div className="footer-credits-body">
+              <a
+                href="https://www.themoviedb.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-tmdb-link"
+                title="The Movie Database (TMDB)"
+              >
+                <img
+                  src="/tmdb_logo.svg"
+                  alt="The Movie Database (TMDB)"
+                  className="footer-tmdb-logo"
+                  width="85"
+                  height="11"
+                  loading="lazy"
+                />
+              </a>
+              <p className="footer-tmdb-disclaimer">
+                This product uses the TMDB API but is not endorsed or certified by TMDB.
+              </p>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
